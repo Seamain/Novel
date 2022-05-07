@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Novel2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Novel2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:Name="nvSample8" Grid.Row="1"
+                        PaneDisplayMode="Top"
+                        IsTabStop="False"
+                        ItemInvoked="NvSample_OnItemInvoked"
+                        Loaded="MainPage_OnLoaded"
+                        IsBackButtonVisible="Collapsed">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="主页" Icon="Home" ToolTipService.ToolTip="就主页，也没啥好看的" IsEnabled="True" Tag="NavHome"/>
+                <NavigationViewItem Content="分类" Icon="Contact" ToolTipService.ToolTip="分类，选择你想要看的小说" IsEnabled="True" Tag="NavNovel"/>
+                <NavigationViewItem Content="关于我" Icon="People" ToolTipService.ToolTip="就是我的基本信息啦" IsEnabled="True" Tag="NavAboutme"/>
+                <NavigationViewItem Content="音乐播放器" Icon="Contact" ToolTipService.ToolTip="可以选择你阅读时想要听的歌" IsEnabled="True" Tag="NavPlayer"/>
+            </NavigationView.MenuItems>
+            <Frame x:Name="MainPageFrame" />
+        </NavigationView>
+    </Grid>
+</Page>

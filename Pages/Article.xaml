@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="Novel2.Pages.Article"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Novel2.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#F7D76D">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="WindowStates">
+                <!--Windows's size >= 800, background green-->
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainText.FontSize" Value="60" />
+                    </VisualState.Setters>
+                </VisualState>
+                <!--Windows's size >0 and < 800, background blue-->
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainText.FontSize" Value="40" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <ProgressRing x:Name="LoadingRing" Height="300" Width="300" IsActive="True" />
+        <ScrollViewer IsTabStop="True" IsVerticalScrollChainingEnabled="True"
+                      HorizontalScrollMode="Enabled" HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Center"/>
+                <controls:MarkdownTextBlock
+                x:Name="MainText" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                TextWrapping="Wrap"  
+                MaxWidth="800"
+                Background="#F7D76D"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Frame x:Name="ArticleFrame" />
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Novel2.Pages.About_Me"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Novel2.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="这是由Seamain和Jimmy共同写得一个小应用，有点闲写着练手的啦。" FontSize="48" />
+            <TextBlock Text="个人网页！" FontFamily="Arial Black" Foreground="#FFF76D6D"  FontSize="72" />
+        </StackPanel>
+        <HyperlinkButton Content="Seamain" NavigateUri="https://seamain.studio/" Margin="0,139,0,0" VerticalAlignment="Top" Height="119" Width="326" FontSize="72" />
+        <HyperlinkButton Content="Jimmy" NavigateUri="https://moe.jimmy0w0.me/" Margin="10,258,0,0" VerticalAlignment="Top" Height="104" Width="286" FontSize="72" />
+    </Grid>
+</Page>
