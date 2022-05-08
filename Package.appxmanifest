@@ -8,14 +8,14 @@
 
   <Identity
     Name="9be4e611-f2a0-4f06-a46e-1869ac18cb73"
-    Publisher="CN=ASUS"
-    Version="1.0.0.0" />
+    Publisher="CN=Seamain"
+    Version="1.0.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="9be4e611-f2a0-4f06-a46e-1869ac18cb73" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Novel2</DisplayName>
-    <PublisherDisplayName>ASUS</PublisherDisplayName>
+    <DisplayName>Novel V1.0</DisplayName>
+    <PublisherDisplayName>Seamain</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

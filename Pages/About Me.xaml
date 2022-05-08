@@ -10,13 +10,13 @@
 
     <Grid>
         <StackPanel>
-            <TextBlock Text="这是由Seamain和Jimmy共同写得一个小应用，有点闲写着练手的啦。" FontSize="48" />
-            <TextBlock Text="个人网页！" FontFamily="Arial Black" Foreground="#FFF76D6D"  FontSize="72" />
+            <TextBlock Text="这是由Seamain和Jimmy共同写得一个小应用，有点闲写着练手的啦。" FontSize="48" TextWrapping="Wrap"/>
+            <TextBlock Text="个人网页！" FontFamily="Arial Black" Foreground="#FFF76D6D"  FontSize="72" TextWrapping="Wrap"/>
         </StackPanel>
-        <HyperlinkButton Content="Seamain" NavigateUri="https://seamain.studio/" Margin="40,165,0,0" VerticalAlignment="Top" Height="119" Width="326" FontSize="72" />
+        <HyperlinkButton Content="Seamain" NavigateUri="https://seamain.studio/" Margin="60,165,0,0" VerticalAlignment="Top" Height="119" Width="326" FontSize="72" />
         <HyperlinkButton Content="Jimmy" NavigateUri="https://moe.jimmy0w0.me/" Margin="60,310,0,0" VerticalAlignment="Top" Height="104" Width="286" FontSize="72" />
-        <Image Margin="1018,165,183,545" Source="/Assets/Square44x44Logo.altform-lightunplated_targetsize-256.png"/>
-        <HyperlinkButton Content="Github仓库(开源项目)" NavigateUri="https://github.com/Seamain/Novel" Margin="715,793,0,0" VerticalAlignment="Top" Height="180" Width="771" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+        <Image Margin="383,86,548,361" Source="/Assets/Square44x44Logo.altform-lightunplated_targetsize-256.png"/>
+        <HyperlinkButton Content="Github仓库(开源项目)" NavigateUri="https://github.com/Seamain/Novel" Margin="63,447,0,0" VerticalAlignment="Top" Height="180" Width="771" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
             <HyperlinkButton.RenderTransform>
                 <CompositeTransform Rotation="-0.503"/>
             </HyperlinkButton.RenderTransform>
