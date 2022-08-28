@@ -16,10 +16,10 @@
                         Loaded="MainPage_OnLoaded"
                         IsBackButtonVisible="Collapsed">
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="主页" Icon="Home" ToolTipService.ToolTip="就主页，也没啥好看的" IsEnabled="True" Tag="NavHome"/>
-                <NavigationViewItem Content="分类" Icon="Contact" ToolTipService.ToolTip="分类，选择你想要看的小说" IsEnabled="True" Tag="NavNovel"/>
-                <NavigationViewItem Content="关于我" Icon="People" ToolTipService.ToolTip="就是我的基本信息啦" IsEnabled="True" Tag="NavAboutme"/>
-                <NavigationViewItem Content="音乐播放器" Icon="Contact" ToolTipService.ToolTip="可以选择你阅读时想要听的歌" IsEnabled="True" Tag="NavPlayer"/>
+                <NavigationViewItem Content="主页" Icon="Home" ToolTipService.ToolTip="就主页，也没啥好看的" IsEnabled="True" Tag="NavHome" />
+                <NavigationViewItem Content="分类" Icon="Contact" ToolTipService.ToolTip="分类，选择你想要看的小说" IsEnabled="True" Tag="NavNovel" />
+                <NavigationViewItem Content="关于我" Icon="People" ToolTipService.ToolTip="就是我的基本信息啦" IsEnabled="True" Tag="NavAboutme" />
+                <NavigationViewItem Content="音乐播放器" Icon="Contact" ToolTipService.ToolTip="可以选择你阅读时想要听的歌" IsEnabled="True" Tag="NavPlayer" />
             </NavigationView.MenuItems>
             <Frame x:Name="MainPageFrame" />
         </NavigationView>
